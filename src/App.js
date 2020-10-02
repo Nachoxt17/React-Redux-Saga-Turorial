@@ -1,15 +1,17 @@
-import React from "react";
-import Shop from "./shop/Shop";
-import { Provider } from "react-redux";
-import store from "./redux/store";
+import React from 'react';
+import './App.css';
+import ActionComponent from './components/ActionComponent';
+import OutputComponent from './components/OutputComponent';
 
 function App() {
   return (
-    <Provider store={store}>
-      <div>
-        <Shop />
-      </div>
-    </Provider>
+    <div className="App">
+      <header className="App-header">
+      <OutputComponent />
+        <ActionComponent />
+
+      </header>
+    </div>
   );
 }
 
